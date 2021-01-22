@@ -1,0 +1,36 @@
+<!doctype html>
+<html>   
+  <head>
+    <title>Film Finder</title>  
+
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+	<body>
+    <section class="jumbotron">
+      <h1>Find your movie !</h1>
+      <form>
+          <input id="search-input" class="" type="search" placeholder="Search" aria-label="Search">
+          <button id="search-button" class="" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <div id="popup">
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span onclick="closePopup()" class="close">&times;</span>
+            <div id="modalcontent"></div>
+          </div>
+        </div>
+      </div>
+      <div id="display"></div>
+    </section>
+  
+		<script src="main.js"></script>    
+	</body>
+</html>
